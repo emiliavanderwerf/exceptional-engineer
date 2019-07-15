@@ -50,7 +50,19 @@ namespace Assignment1
 
         public decimal CalculateMean()
         {
-            return 0;
+            decimal total = 0;
+            int count = 0;
+
+            Node head = LinkedList.GetLinkedList();
+            Node current = head;
+            while (current != null)
+            {
+                total += current.Value;
+                count++;
+                current = current.Next;
+            }
+
+            return total / count;
         }
 
         public decimal CalculateStandardDeviation()

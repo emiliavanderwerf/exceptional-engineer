@@ -10,17 +10,41 @@ namespace Tests
         Calculator calculator = new Calculator();
         string myPath = "C:\\Users\\Emilia Vanderwerf\\source\\repos\\exceptional-engineer\\assignment1\\Tests";
 
-        #region Success Cases: Full Calculations
+        #region Success Cases: Mean Calculations
         [Fact]
-        public void CalculatingMean_CalculatingStandardDeviation_EstimatedProxySize()
+        public void CalculatingMean_EstimatedProxySize()
         {
-            
+            calculator.ReadData($"{myPath}/EstimatedProxySize.txt");
+            Assert.True(calculator.CalculateMean() == (decimal)550.6);
+        }
+
+        [Fact]
+        public void CalculatingMean_DevelopmentHours()
+        {
+            calculator.ReadData($"{myPath}/DevelopmentHours.txt");
+            Assert.True(calculator.CalculateMean() == (decimal)60.32);
+        }
+
+        [Fact]
+        public void CalculatingMean_MaxValueMinValue()
+        {
+            calculator.ReadData($"{myPath}/Mean_MaxValueMinValue.txt");
+            Assert.True(calculator.CalculateMean() == 0);
+        }
+        #endregion
+
+        #region Error Cases: Mean Calculations
+        [Fact]
+        public void CalculatingMean_MaxValuePlusOne_ThrowsOverflowException()
+        {
+            calculator.ReadData($"{myPath}/Mean_MaxValuePlusOne.txt");
+            Assert.Throws<OverflowException>(() => calculator.CalculateMean());
         }
         #endregion
 
         #region Success Cases: Linked List Implementation
         [Fact]
-        public void InsertingToLinkedList_ThreeItems_CreatesCorrectLinkedList()
+        public void InsertingToLinkedList_ThreeItems()
         {
             calculator.ReadData($"{myPath}/LinkedListThreeItems.txt");
             Node head = calculator.LinkedList.GetLinkedList();
@@ -31,13 +55,15 @@ namespace Tests
         }
         #endregion
 
-        #region Failure Cases: Data Parsing
+        #region Failure Cases: File Lookup
         [Fact]
         public void CallingCalculator_InvalidFilePath_ThrowsFileNotFoundException()
         {
             Assert.Throws<FileNotFoundException>(() => calculator.ReadData($"{myPath}/InvalidFilePath.txt"));
         }
+        #endregion
 
+        #region Failure Cases: Data Parsing
         [Fact]
         public void CallingCalculator_NoDataInFile_ThrowsInvalidDataException()
         {
