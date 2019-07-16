@@ -39,18 +39,23 @@ namespace Assignment1
 
             foreach (string line in lines)
             {
-                if (!decimal.TryParse(line, out decimal number))
+                if (!double.TryParse(line, out double number))
                 {
-                    throw new InvalidDataException($"Failed to parse {line} as a decimal");
+                    throw new InvalidDataException($"Failed to parse {line} as a double");
+                }
+
+                if (double.IsInfinity(number))
+                {
+                    throw new OverflowException($"Input is too large");
                 }
 
                 LinkedList.Insert(number);
             }
         }
 
-        public decimal CalculateMean()
+        public double CalculateMean()
         {
-            decimal total = 0;
+            double total = 0;
             int count = 0;
 
             Node head = LinkedList.GetLinkedList();
@@ -62,12 +67,43 @@ namespace Assignment1
                 current = current.Next;
             }
 
+            if (double.IsInfinity(total))
+            {
+                throw new OverflowException("Mean cannot be calculated: too large");
+            }
+
             return total / count;
         }
 
-        public decimal CalculateStandardDeviation()
+        public double CalculateStandardDeviation()
         {
-            return 0;
+            double standardDeviation = 0;
+            double mean = this.CalculateMean();
+            double numerator = 0;
+            int count = 0;
+
+            Node head = LinkedList.GetLinkedList();
+            Node current = head;
+            while (current != null)
+            {
+                numerator += Math.Pow(current.Value - mean, 2);
+                current = current.Next;
+                count++;
+            }
+
+            if (double.IsInfinity(numerator))
+            {
+                throw new OverflowException("Standard deviation cannot be calculated: too large");
+            }
+
+            if (count <= 1)
+            {
+                throw new InvalidOperationException("Cannot calculate standard deviation: only 1 value supplied");
+            }
+
+            double denominator = count - 1;
+            standardDeviation = Math.Sqrt(numerator / denominator);
+            return standardDeviation;
         }
     }
 }

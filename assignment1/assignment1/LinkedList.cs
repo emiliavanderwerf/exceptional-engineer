@@ -6,10 +6,10 @@ namespace Assignment1
 {
     public class Node
     {
-        public decimal Value { get; set; }
+        public double Value { get; set; }
         public Node Next { get; set; }
 
-        public Node(decimal value)
+        public Node(double value)
         {
             this.Value = value;
         }
@@ -19,7 +19,7 @@ namespace Assignment1
     {
         private Node head;
 
-        public void Insert(decimal value)
+        public void Insert(double value)
         {
             Node node = new Node(value);
             if (head != null)

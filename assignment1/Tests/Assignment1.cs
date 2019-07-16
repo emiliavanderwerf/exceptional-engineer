@@ -15,29 +15,61 @@ namespace Tests
         public void CalculatingMean_EstimatedProxySize()
         {
             calculator.ReadData($"{myPath}/EstimatedProxySize.txt");
-            Assert.True(calculator.CalculateMean() == (decimal)550.6);
+            Assert.True(Equals(Math.Round(calculator.CalculateMean(), 1), 550.6));
         }
 
         [Fact]
         public void CalculatingMean_DevelopmentHours()
         {
             calculator.ReadData($"{myPath}/DevelopmentHours.txt");
-            Assert.True(calculator.CalculateMean() == (decimal)60.32);
+            Assert.True(Equals(Math.Round(calculator.CalculateMean(), 2), 60.32));
         }
 
         [Fact]
         public void CalculatingMean_MaxValueMinValue()
         {
-            calculator.ReadData($"{myPath}/Mean_MaxValueMinValue.txt");
-            Assert.True(calculator.CalculateMean() == 0);
+            calculator.ReadData($"{myPath}/MaxValueMinValue.txt");
+            Assert.True(Equals(Math.Round(calculator.CalculateMean()), (double)0));
+        }
+        #endregion
+
+        #region Success Cases: Standard Deviation Calculations
+        [Fact]
+        public void CalculatingStandardDeviation_EstimatedProxySize()
+        {
+            calculator.ReadData($"{myPath}/EstimatedProxySize.txt");
+            Assert.True(Equals(Math.Round(calculator.CalculateStandardDeviation(), 2), 572.03));
+        }
+
+        [Fact]
+        public void CalculatingStandardDeviation_DevelopmentHours()
+        {
+            calculator.ReadData($"{myPath}/DevelopmentHours.txt");
+            Assert.True(Equals(Math.Round(calculator.CalculateStandardDeviation(), 2), 62.26));
+        }
+        #endregion
+
+        #region Error Cases: Standard Deviation Calculations
+        [Fact]
+        public void CalculatingStandardDeviation_OneItemOnly_ThrowsInvalidOperationException()
+        {
+            calculator.ReadData($"{myPath}/OneValueOnly.txt");
+            Assert.Throws<InvalidOperationException>(() => calculator.CalculateStandardDeviation());
+        }
+
+        [Fact]
+        public void CalculatingStandardDeviation_MaxValuePlusZero_ThrowsOverflowException()
+        {
+            calculator.ReadData($"{myPath}/MaxValuePlusZero.txt");
+            Assert.Throws<OverflowException>(() => calculator.CalculateStandardDeviation());
         }
         #endregion
 
         #region Error Cases: Mean Calculations
         [Fact]
-        public void CalculatingMean_MaxValuePlusOne_ThrowsOverflowException()
+        public void CalculatingMean_MaxValuePlusMaxValue_ThrowsOverflowException()
         {
-            calculator.ReadData($"{myPath}/Mean_MaxValuePlusOne.txt");
+            calculator.ReadData($"{myPath}/MaxValuePlusMaxValue.txt");
             Assert.Throws<OverflowException>(() => calculator.CalculateMean());
         }
         #endregion
@@ -49,9 +81,9 @@ namespace Tests
             calculator.ReadData($"{myPath}/LinkedListThreeItems.txt");
             Node head = calculator.LinkedList.GetLinkedList();
 
-            Assert.True(head.Value == 3);
-            Assert.True(head.Next.Value == 2);
-            Assert.True(head.Next.Next.Value == 1);
+            Assert.True(Equals(head.Value, 3));
+            Assert.True(Equals(head.Next.Value, 2));
+            Assert.True(Equals(head.Next.Next.Value, 1));
         }
         #endregion
 
