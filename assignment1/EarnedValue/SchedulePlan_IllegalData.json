@@ -2,7 +2,7 @@
     "SchedulePlans": [
         {
             "Week": 0,
-            "Begin": "This is not a date",
+            "Begin": "3/1/2020 12:00:00 AM",
             "PlannedTaskHours": -4
         }
     ]
