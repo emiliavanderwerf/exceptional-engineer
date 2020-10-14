@@ -1,0 +1,404 @@
+{
+    "TaskPlans": [
+        {
+            "Task": "Planning",
+            "HoursToComplete": 10.96
+        },
+        {
+            "Task": "Create an outline",
+            "HoursToComplete": 24.66
+        },
+        {
+            "Task": "Writing",
+            "HoursToComplete": 49.32
+        },
+        {
+            "Task": "Personal review",
+            "HoursToComplete": 17.81
+        },
+        {
+            "Task": "Inspection",
+            "HoursToComplete": 28.77
+        },
+        {
+            "Task": "Verify data",
+            "HoursToComplete": 5.48
+        },
+        {
+            "Task": "Submission to peers",
+            "HoursToComplete": 1.02
+        },
+        {
+            "Task": "Review peer feedback",
+            "HoursToComplete": 2.56
+        },
+        {
+            "Task": "Implement peer feedback",
+            "HoursToComplete": 5.32
+        },
+        {
+            "Task": "Submission to publisher",
+            "HoursToComplete": 3.99
+        },
+        {
+            "Task": "Planning",
+            "HoursToComplete": 10.96
+        },
+        {
+            "Task": "Create an outline",
+            "HoursToComplete": 24.66
+        },
+        {
+            "Task": "Writing",
+            "HoursToComplete": 49.32
+        },
+        {
+            "Task": "Personal review",
+            "HoursToComplete": 17.81
+        },
+        {
+            "Task": "Inspection",
+            "HoursToComplete": 28.77
+        },
+        {
+            "Task": "Verify data",
+            "HoursToComplete": 5.48
+        },
+        {
+            "Task": "Submission to peers",
+            "HoursToComplete": 1.02
+        },
+        {
+            "Task": "Review peer feedback",
+            "HoursToComplete": 2.56
+        },
+        {
+            "Task": "Implement peer feedback",
+            "HoursToComplete": 5.32
+        },
+        {
+            "Task": "Submission to publisher",
+            "HoursToComplete": 3.99
+        },
+        {
+            "Task": "Planning",
+            "HoursToComplete": 10.96
+        },
+        {
+            "Task": "Create an outline",
+            "HoursToComplete": 24.66
+        },
+        {
+            "Task": "Writing",
+            "HoursToComplete": 49.32
+        },
+        {
+            "Task": "Personal review",
+            "HoursToComplete": 17.81
+        },
+        {
+            "Task": "Inspection",
+            "HoursToComplete": 28.77
+        },
+        {
+            "Task": "Verify data",
+            "HoursToComplete": 5.48
+        },
+        {
+            "Task": "Submission to peers",
+            "HoursToComplete": 1.02
+        },
+        {
+            "Task": "Review peer feedback",
+            "HoursToComplete": 2.56
+        },
+        {
+            "Task": "Implement peer feedback",
+            "HoursToComplete": 5.32
+        },
+        {
+            "Task": "Submission to publisher",
+            "HoursToComplete": 3.99
+        },
+        {
+            "Task": "Planning",
+            "HoursToComplete": 10.96
+        },
+        {
+            "Task": "Create an outline",
+            "HoursToComplete": 24.66
+        },
+        {
+            "Task": "Writing",
+            "HoursToComplete": 49.32
+        },
+        {
+            "Task": "Personal review",
+            "HoursToComplete": 17.81
+        },
+        {
+            "Task": "Inspection",
+            "HoursToComplete": 28.77
+        },
+        {
+            "Task": "Verify data",
+            "HoursToComplete": 5.48
+        },
+        {
+            "Task": "Submission to peers",
+            "HoursToComplete": 1.02
+        },
+        {
+            "Task": "Review peer feedback",
+            "HoursToComplete": 2.56
+        },
+        {
+            "Task": "Implement peer feedback",
+            "HoursToComplete": 5.32
+        },
+        {
+            "Task": "Submission to publisher",
+            "HoursToComplete": 3.99
+        },
+        {
+            "Task": "Planning",
+            "HoursToComplete": 10.96
+        },
+        {
+            "Task": "Create an outline",
+            "HoursToComplete": 24.66
+        },
+        {
+            "Task": "Writing",
+            "HoursToComplete": 49.32
+        },
+        {
+            "Task": "Personal review",
+            "HoursToComplete": 17.81
+        },
+        {
+            "Task": "Inspection",
+            "HoursToComplete": 28.77
+        },
+        {
+            "Task": "Verify data",
+            "HoursToComplete": 5.48
+        },
+        {
+            "Task": "Submission to peers",
+            "HoursToComplete": 1.02
+        },
+        {
+            "Task": "Review peer feedback",
+            "HoursToComplete": 2.56
+        },
+        {
+            "Task": "Implement peer feedback",
+            "HoursToComplete": 5.32
+        },
+        {
+            "Task": "Submission to publisher",
+            "HoursToComplete": 3.99
+        },
+        {
+            "Task": "Planning",
+            "HoursToComplete": 10.96
+        },
+        {
+            "Task": "Create an outline",
+            "HoursToComplete": 24.66
+        },
+        {
+            "Task": "Writing",
+            "HoursToComplete": 49.32
+        },
+        {
+            "Task": "Personal review",
+            "HoursToComplete": 17.81
+        },
+        {
+            "Task": "Inspection",
+            "HoursToComplete": 28.77
+        },
+        {
+            "Task": "Verify data",
+            "HoursToComplete": 5.48
+        },
+        {
+            "Task": "Submission to peers",
+            "HoursToComplete": 1.02
+        },
+        {
+            "Task": "Review peer feedback",
+            "HoursToComplete": 2.56
+        },
+        {
+            "Task": "Implement peer feedback",
+            "HoursToComplete": 5.32
+        },
+        {
+            "Task": "Submission to publisher",
+            "HoursToComplete": 3.99
+        },
+        {
+            "Task": "Planning",
+            "HoursToComplete": 10.96
+        },
+        {
+            "Task": "Create an outline",
+            "HoursToComplete": 24.66
+        },
+        {
+            "Task": "Writing",
+            "HoursToComplete": 49.32
+        },
+        {
+            "Task": "Personal review",
+            "HoursToComplete": 17.81
+        },
+        {
+            "Task": "Inspection",
+            "HoursToComplete": 28.77
+        },
+        {
+            "Task": "Verify data",
+            "HoursToComplete": 5.48
+        },
+        {
+            "Task": "Submission to peers",
+            "HoursToComplete": 1.02
+        },
+        {
+            "Task": "Review peer feedback",
+            "HoursToComplete": 2.56
+        },
+        {
+            "Task": "Implement peer feedback",
+            "HoursToComplete": 5.32
+        },
+        {
+            "Task": "Submission to publisher",
+            "HoursToComplete": 3.99
+        },
+        {
+            "Task": "Planning",
+            "HoursToComplete": 10.96
+        },
+        {
+            "Task": "Create an outline",
+            "HoursToComplete": 24.66
+        },
+        {
+            "Task": "Writing",
+            "HoursToComplete": 49.32
+        },
+        {
+            "Task": "Personal review",
+            "HoursToComplete": 17.81
+        },
+        {
+            "Task": "Inspection",
+            "HoursToComplete": 28.77
+        },
+        {
+            "Task": "Verify data",
+            "HoursToComplete": 5.48
+        },
+        {
+            "Task": "Submission to peers",
+            "HoursToComplete": 1.02
+        },
+        {
+            "Task": "Review peer feedback",
+            "HoursToComplete": 2.56
+        },
+        {
+            "Task": "Implement peer feedback",
+            "HoursToComplete": 5.32
+        },
+        {
+            "Task": "Submission to publisher",
+            "HoursToComplete": 3.99
+        },
+        {
+            "Task": "Planning",
+            "HoursToComplete": 10.96
+        },
+        {
+            "Task": "Create an outline",
+            "HoursToComplete": 24.66
+        },
+        {
+            "Task": "Writing",
+            "HoursToComplete": 49.32
+        },
+        {
+            "Task": "Personal review",
+            "HoursToComplete": 17.81
+        },
+        {
+            "Task": "Inspection",
+            "HoursToComplete": 28.77
+        },
+        {
+            "Task": "Verify data",
+            "HoursToComplete": 5.48
+        },
+        {
+            "Task": "Submission to peers",
+            "HoursToComplete": 1.02
+        },
+        {
+            "Task": "Review peer feedback",
+            "HoursToComplete": 2.56
+        },
+        {
+            "Task": "Implement peer feedback",
+            "HoursToComplete": 5.32
+        },
+        {
+            "Task": "Submission to publisher",
+            "HoursToComplete": 3.99
+        },
+        {
+            "Task": "Planning",
+            "HoursToComplete": 10.96
+        },
+        {
+            "Task": "Create an outline",
+            "HoursToComplete": 24.66
+        },
+        {
+            "Task": "Writing",
+            "HoursToComplete": 49.32
+        },
+        {
+            "Task": "Personal review",
+            "HoursToComplete": 17.81
+        },
+        {
+            "Task": "Inspection",
+            "HoursToComplete": 28.77
+        },
+        {
+            "Task": "Verify data",
+            "HoursToComplete": 5.48
+        },
+        {
+            "Task": "Submission to peers",
+            "HoursToComplete": 1.02
+        },
+        {
+            "Task": "Review peer feedback",
+            "HoursToComplete": 2.56
+        },
+        {
+            "Task": "Implement peer feedback",
+            "HoursToComplete": 5.32
+        },
+        {
+            "Task": "Submission to publisher",
+            "HoursToComplete": 3.99
+        }
+    ]
+}

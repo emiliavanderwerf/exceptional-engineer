@@ -1,0 +1,9 @@
+{
+    "SchedulePlans": [
+        {
+            "Week": 0,
+            "Begin": "This is not a date",
+            "PlannedTaskHours": -4
+        }
+    ]
+}
