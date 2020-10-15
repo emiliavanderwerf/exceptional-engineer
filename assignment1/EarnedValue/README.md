@@ -27,7 +27,14 @@ The purpose of this assignment is to:
 ### Phase 1: Deserialize the input JSON into internal model objects
 ![Phase 1 Design](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment1/EarnedValue/Images/Phase1_GetData_Design.jpg)
 
+### Phase 2: Perform the Earned Value Plan calculations
+![Phase 2 Design](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment1/EarnedValue/Images/Phase2_DoCalculations_Design.jpg)
+
+### Phase 3: Output the Earned Value Plan calculations to JSON files
+![Phase 3 Design](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment1/EarnedValue/Images/Phase3_OutputData_Design.jpg)
+
 ## Results
 
-TODO: Add images
+The below is my personal Process Dashboard Data as I completed this assignment.
 
+![My Earned Value Schedule](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment1/EarnedValue/Images/DataActuals.PNG)
