@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace EarnedValue
 {
     public class Builder
     {
-        public SchedulePlanOutput Build(List<SchedulePlan> schedulePlans, int index)
+        public SchedulePlanOutput Build(List<SchedulePlan> schedulePlans, int index, List<TaskPlan> taskPlans)
         {
             SchedulePlan schedulePlan = schedulePlans[index];
 
@@ -23,6 +22,26 @@ namespace EarnedValue
                 .Take(index + 1)
                 .Select(s => s.PlannedTaskHours)
                 .Sum(), 2);
+
+            // Cumulative planned value is the amount of value that will be achieved by the current week
+            double sum = 0;
+            output.CumulativePlannedValue = Math.Round(taskPlans
+                .TakeWhile(t =>
+                {
+                    if (sum >= output.CumulativePlannedTaskHours)
+                    {
+                        // Stop taking TaskPlan objects because we don't have enough time to finish this task
+                        return false;
+                    }
+                    else
+                    {
+                        // We will be able to complete this task
+                        sum += t.HoursToComplete;
+                        return true;
+                    }
+                })
+                .Select(t => t.HoursToComplete)
+                .Sum() / output.CumulativePlannedTaskHours, 2);
 
             // Cumulate planned value is the total percentage value that should be earned up to this week
             output.CumulativePlannedValue = Math.Round(output.CumulativePlannedTaskHours /

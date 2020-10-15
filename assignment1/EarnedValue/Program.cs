@@ -39,7 +39,7 @@ namespace EarnedValue
             List<SchedulePlanOutput> schedulePlanOutput = new List<SchedulePlanOutput>();
             for (int i = 0; i < schedulePlans.Count; i++)
             {
-                SchedulePlanOutput result = Builder.Build(schedulePlans, i);
+                SchedulePlanOutput result = Builder.Build(schedulePlans, i, taskPlans);
                 SchedulePlanOutput expected = expectedSchedulePlanOutputs[i];
 
                 Assert.True(result.Begin.Equals(expected.Begin));
@@ -86,7 +86,7 @@ namespace EarnedValue
             List<SchedulePlanOutput> schedulePlanOutput = new List<SchedulePlanOutput>();
             for (int i = 0; i < schedulePlans.Count; i++)
             {
-                schedulePlanOutput.Add(Builder.Build(schedulePlans, i));
+                schedulePlanOutput.Add(Builder.Build(schedulePlans, i, taskPlans));
             }
 
             List<TaskPlanOutput> taskPlanOutput = new List<TaskPlanOutput>();
