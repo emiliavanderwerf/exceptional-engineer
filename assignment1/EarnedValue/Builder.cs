@@ -19,10 +19,10 @@ namespace EarnedValue
             output.PlannedTaskHours = schedulePlan.PlannedTaskHours;
 
             // Cumulative planned task hours is the total number of hours that will be spent up to this week
-            output.CumulativePlannedTaskHours = schedulePlans
+            output.CumulativePlannedTaskHours = Math.Round(schedulePlans
                 .Take(index + 1)
                 .Select(s => s.PlannedTaskHours)
-                .Sum();
+                .Sum(), 2);
 
             // Cumulate planned value is the total percentage value that should be earned up to this week
             output.CumulativePlannedValue = Math.Round(output.CumulativePlannedTaskHours /
@@ -44,10 +44,10 @@ namespace EarnedValue
             output.HoursToComplete = taskPlan.HoursToComplete;
 
             // Cumulative task hours is the total number of hours spent on this project up through completing this task
-            output.CumulativeTaskHours = taskPlans
+            output.CumulativeTaskHours = Math.Round(taskPlans
                 .Take(index + 1)
                 .Select(t => t.HoursToComplete)
-                .Sum();
+                .Sum(), 2);
 
             // Planned value is the percentage of time this task will take out of all time allocated for this project
             output.PlannedValue = Math.Round(taskPlan.HoursToComplete /
