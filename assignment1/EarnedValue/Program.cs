@@ -16,25 +16,85 @@ namespace EarnedValue
 
         #region Unit Test Methods
         [Theory]
-        [InlineData("SchedulePlan_ExampleData.json", "TaskPlan_ExampleData.json")]
-        [InlineData("SchedulePlan_100Tasks.json", "TaskPlan_100Tasks.json")]
-        public void Should_Calculate_Earned_Value_Plan(string schedulePlanPath, string taskPlanPath)
+        [InlineData("SchedulePlan_ExampleData.json", "TaskPlan_ExampleData.json", "SchedulePlan_ExampleData_Output.json", "TaskPlan_ExampleData_Output.json")]
+        public void Should_Calculate_Earned_Value_Plan_And_Validate_Data(
+            string schedulePlanPath,
+            string taskPlanPath,
+            string schedulePlanCorrectOutputPath,
+            string taskPlanCorrectOutputPath)
         {
+            // Read in the data from file
             List<SchedulePlan> schedulePlans = ReadSchedulePlan(schedulePlanPath);
             List<TaskPlan> taskPlans = ReadTaskPlan(taskPlanPath);
 
+            // Validate the data, catching any illegal formatting
             Validator.Validate(schedulePlans);
             Validator.Validate(taskPlans);
 
+            // Deserialize expected results
+            List<SchedulePlanOutput> expectedSchedulePlanOutputs = ReadSchedulePlanOutputs(schedulePlanCorrectOutputPath);
+            List<TaskPlanOutput> expectedTaskPlanOutputs = ReadTaskPlanOutputs(taskPlanCorrectOutputPath);
+
+            // Generate & process the input data into the transformed output data
+            List<SchedulePlanOutput> schedulePlanOutput = new List<SchedulePlanOutput>();
             for (int i = 0; i < schedulePlans.Count; i++)
             {
-                SchedulePlanOutput schedulePlanOutput = Builder.Build(schedulePlans, i);
-            }
+                SchedulePlanOutput result = Builder.Build(schedulePlans, i);
+                SchedulePlanOutput expected = expectedSchedulePlanOutputs[i];
 
+                Assert.True(result.Begin.Equals(expected.Begin));
+                Assert.True(result.CumulativePlannedTaskHours.Equals(expected.CumulativePlannedTaskHours));
+                Assert.True(result.CumulativePlannedValue.Equals(expected.CumulativePlannedValue));
+                Assert.True(result.PlannedTaskHours.Equals(expected.PlannedTaskHours));
+                Assert.True(result.Week.Equals(expected.Week));
+
+                schedulePlanOutput.Add(result);
+            }
+            Assert.True(schedulePlanOutput.Count.Equals(expectedSchedulePlanOutputs.Count));
+
+            List<TaskPlanOutput> taskPlanOutput = new List<TaskPlanOutput>();
             for (int i = 0; i < taskPlans.Count; i++)
             {
-                TaskPlanOutput taskPlanOutput = Builder.Build(taskPlans, i, schedulePlans);
+                TaskPlanOutput result = Builder.Build(taskPlans, i, schedulePlans);
+                TaskPlanOutput expected = expectedTaskPlanOutputs[i];
+
+                Assert.True(result.CumulativePlannedValue.Equals(expected.CumulativePlannedValue));
+                Assert.True(result.CumulativeTaskHours.Equals(expected.CumulativeTaskHours));
+                Assert.True(result.HoursToComplete.Equals(expected.HoursToComplete));
+                Assert.True(result.PlannedValue.Equals(expected.PlannedValue));
+                Assert.True(result.Task.Equals(expected.Task));
+                Assert.True(result.WeekOfPlannedCompletion.Equals(expected.WeekOfPlannedCompletion));
+
+                taskPlanOutput.Add(result);
             }
+            Assert.True(taskPlanOutput.Count.Equals(expectedTaskPlanOutputs.Count));
+        }
+
+        [Theory]
+        [InlineData("SchedulePlan_100Tasks.json", "TaskPlan_100Tasks.json")]
+        public void Should_Calculate_Earned_Value_Plan(string schedulePlanPath, string taskPlanPath)
+        {
+            // Read in the data from file
+            List<SchedulePlan> schedulePlans = ReadSchedulePlan(schedulePlanPath);
+            List<TaskPlan> taskPlans = ReadTaskPlan(taskPlanPath);
+
+            // Validate the data, catching any illegal formatting
+            Validator.Validate(schedulePlans);
+            Validator.Validate(taskPlans);
+
+            // Generate & process the input data into the transformed output data
+            List<SchedulePlanOutput> schedulePlanOutput = new List<SchedulePlanOutput>();
+            for (int i = 0; i < schedulePlans.Count; i++)
+            {
+                schedulePlanOutput.Add(Builder.Build(schedulePlans, i));
+            }
+
+            List<TaskPlanOutput> taskPlanOutput = new List<TaskPlanOutput>();
+            for (int i = 0; i < taskPlans.Count; i++)
+            {
+                taskPlanOutput.Add(Builder.Build(taskPlans, i, schedulePlans));
+            }
+
         }
 
         [Theory]
@@ -69,6 +129,15 @@ namespace EarnedValue
             return schedulePlans;
         }
 
+        private List<SchedulePlanOutput> ReadSchedulePlanOutputs(string schedulePlanCorrectOutputPath)
+        {
+            using (StreamReader r = new StreamReader(ResolvePath(schedulePlanCorrectOutputPath)))
+            {
+                string schedulePlan = r.ReadToEnd();
+                return JsonConvert.DeserializeObject<List<SchedulePlanOutput>>(schedulePlan);
+            }
+        }
+
         private List<TaskPlan> ReadTaskPlan(string taskPlanPath)
         {
             List<TaskPlan> taskPlans = new List<TaskPlan>();
@@ -86,6 +155,15 @@ namespace EarnedValue
             }
 
             return taskPlans;
+        }
+
+        private List<TaskPlanOutput> ReadTaskPlanOutputs(string taskPlanCorrectOutputPath)
+        {
+            using (StreamReader r = new StreamReader(ResolvePath(taskPlanCorrectOutputPath)))
+            {
+                string taskPlan = r.ReadToEnd();
+                return JsonConvert.DeserializeObject<List<TaskPlanOutput>>(taskPlan);
+            }
         }
 
         private string ResolvePath(string fileName)

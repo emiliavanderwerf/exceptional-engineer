@@ -1,0 +1,50 @@
+[
+    {
+        "Task": "Planning",
+        "HoursToComplete": 10.96,
+        "CumulativeTaskHours": 10.96,
+        "PlannedValue": 0.08,
+        "CumulativePlannedValue": 0.08,
+        "WeekOfPlannedCompletion":  1
+    },
+    {
+        "Task": "Create an outline",
+        "HoursToComplete": 24.66,
+        "CumulativeTaskHours": 35.62,
+        "PlannedValue": 0.18,
+        "CumulativePlannedValue": 0.26,
+        "WeekOfPlannedCompletion": 2
+    },
+    {
+        "Task": "Writing",
+        "HoursToComplete": 49.32,
+        "CumulativeTaskHours": 84.94,
+        "PlannedValue": 0.36,
+        "CumulativePlannedValue": 0.62,
+        "WeekOfPlannedCompletion": 5
+    },
+    {
+        "Task": "Personal review",
+        "HoursToComplete": 17.81,
+        "CumulativeTaskHours": 102.75,
+        "PlannedValue": 0.13,
+        "CumulativePlannedValue": 0.75,
+        "WeekOfPlannedCompletion": 6
+    },
+    {
+        "Task": "Inspection",
+        "HoursToComplete": 28.77,
+        "CumulativeTaskHours": 131.52,
+        "PlannedValue": 0.21,
+        "CumulativePlannedValue": 0.96,
+        "WeekOfPlannedCompletion": 8
+    },
+    {
+        "Task": "Verify data",
+        "HoursToComplete": 5.48,
+        "CumulativeTaskHours": 137,
+        "PlannedValue": 0.04,
+        "CumulativePlannedValue": 1,
+        "WeekOfPlannedCompletion": 8
+    }
+]
