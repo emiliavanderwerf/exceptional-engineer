@@ -24,7 +24,8 @@ The purpose of this assignment is to:
 
 ## Software Design
 
-TODO: Add images
+### Phase 1: Deserialize the input JSON into internal model objects
+![Phase 1 Design](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment1/EarnedValue/Images/Phase1_GetData_Design.jpg)
 
 ## Results
 
