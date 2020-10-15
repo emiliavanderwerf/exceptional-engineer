@@ -38,15 +38,5 @@
         "Week": 8,
         "Begin": "4/19/2020 12:00:00 AM",
         "PlannedTaskHours": 20
-    },
-    {
-        "Week": 9,
-        "Begin": "4/26/2020 12:00:00 AM",
-        "PlannedTaskHours": 20
-    },
-    {
-        "Week": 10,
-        "Begin": "5/3/2020 12:00:00 AM",
-        "PlannedTaskHours": 20
     }
 ]
