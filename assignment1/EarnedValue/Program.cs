@@ -9,8 +9,12 @@ namespace EarnedValue
 {
     public class Program
     {
+        #region Private Members
         private Validator Validator = new Validator();
+        private Builder Builder = new Builder();
+        #endregion
 
+        #region Unit Test Methods
         [Theory]
         [InlineData("SchedulePlan_ExampleData.json", "TaskPlan_ExampleData.json")]
         [InlineData("SchedulePlan_100Tasks.json", "TaskPlan_100Tasks.json")]
@@ -22,7 +26,15 @@ namespace EarnedValue
             Validator.Validate(schedulePlans);
             Validator.Validate(taskPlans);
 
+            for (int i = 0; i < schedulePlans.Count; i++)
+            {
+                SchedulePlanOutput schedulePlanOutput = Builder.Build(schedulePlans, i);
+            }
 
+            for (int i = 0; i < taskPlans.Count; i++)
+            {
+                TaskPlanOutput taskPlanOutput = Builder.Build(taskPlans, i, schedulePlans);
+            }
         }
 
         [Theory]
@@ -35,7 +47,9 @@ namespace EarnedValue
             Assert.Throws<InvalidDataException>(() => Validator.Validate(schedulePlans));
             Assert.Throws<InvalidDataException>(() => Validator.Validate(taskPlans));
         }
+        #endregion
 
+        #region Private Helper Methods
         private List<SchedulePlan> ReadSchedulePlan(string schedulePlanPath)
         {
             List<SchedulePlan> schedulePlans = new List<SchedulePlan>();
@@ -80,5 +94,6 @@ namespace EarnedValue
             string slnPath = Path.Combine(dllPath, $"..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..");
             return Path.GetFullPath(Path.Combine(slnPath, fileName));
         }
+        #endregion
     }
 }
