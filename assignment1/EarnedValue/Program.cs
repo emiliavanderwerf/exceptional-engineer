@@ -10,6 +10,8 @@ namespace EarnedValue
     public class Program
     {
         #region Private Members
+        private const string JsonSuffix = ".json";
+        private const string GeneratedOutputFragment = "_GeneratedOutput";
         private Validator Validator = new Validator();
         private Builder Builder = new Builder();
         #endregion
@@ -68,6 +70,8 @@ namespace EarnedValue
                 taskPlanOutput.Add(result);
             }
             Assert.True(taskPlanOutput.Count.Equals(expectedTaskPlanOutputs.Count));
+
+            OutputData(schedulePlanPath, schedulePlanOutput, taskPlanPath, taskPlanOutput);
         }
 
         [Theory]
@@ -95,6 +99,10 @@ namespace EarnedValue
                 taskPlanOutput.Add(Builder.Build(taskPlans, i, schedulePlans));
             }
 
+            Assert.True(taskPlanOutput.Count.Equals(100));
+            Assert.True(schedulePlanOutput.Count.Equals(10));
+
+            OutputData(schedulePlanPath, schedulePlanOutput, taskPlanPath, taskPlanOutput);
         }
 
         [Theory]
@@ -110,6 +118,26 @@ namespace EarnedValue
         #endregion
 
         #region Private Helper Methods
+        private void OutputData(
+            string schedulePlanPath,
+            List<SchedulePlanOutput> schedulePlanOutputs,
+            string taskPlanPath,
+            List<TaskPlanOutput> taskPlanOutputs)
+        {
+            string schedulePlanGeneratedOutputPath = schedulePlanPath.Insert(schedulePlanPath.Length - JsonSuffix.Length, GeneratedOutputFragment);
+            string taskPlanGeneratedOutputPath = taskPlanPath.Insert(taskPlanPath.Length - JsonSuffix.Length, GeneratedOutputFragment);
+            WriteOutput(ResolvePath(schedulePlanGeneratedOutputPath), schedulePlanOutputs);
+            WriteOutput(ResolvePath(taskPlanGeneratedOutputPath), taskPlanOutputs);
+        }
+
+        private void WriteOutput(string path, object output)
+        {
+            using (StreamWriter file = File.CreateText(path))
+            {
+                file.WriteLine(JsonConvert.SerializeObject(output, Formatting.Indented));
+            }
+        }
+
         private List<SchedulePlan> ReadSchedulePlan(string schedulePlanPath)
         {
             List<SchedulePlan> schedulePlans = new List<SchedulePlan>();

@@ -1,0 +1,802 @@
+[
+  {
+    "CumulativeTaskHours": 10.96,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.01,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Planning",
+    "HoursToComplete": 10.96
+  },
+  {
+    "CumulativeTaskHours": 35.62,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.02,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Create an outline",
+    "HoursToComplete": 24.66
+  },
+  {
+    "CumulativeTaskHours": 84.94,
+    "PlannedValue": 0.03,
+    "CumulativePlannedValue": 0.06,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Writing",
+    "HoursToComplete": 49.32
+  },
+  {
+    "CumulativeTaskHours": 102.75,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.07,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Personal review",
+    "HoursToComplete": 17.81
+  },
+  {
+    "CumulativeTaskHours": 131.52,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.09,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Inspection",
+    "HoursToComplete": 28.77
+  },
+  {
+    "CumulativeTaskHours": 137.0,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.09,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Verify data",
+    "HoursToComplete": 5.48
+  },
+  {
+    "CumulativeTaskHours": 138.02,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.09,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Submission to peers",
+    "HoursToComplete": 1.02
+  },
+  {
+    "CumulativeTaskHours": 140.58,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.09,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Review peer feedback",
+    "HoursToComplete": 2.56
+  },
+  {
+    "CumulativeTaskHours": 145.9,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.1,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Implement peer feedback",
+    "HoursToComplete": 5.32
+  },
+  {
+    "CumulativeTaskHours": 149.89,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.1,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Submission to publisher",
+    "HoursToComplete": 3.99
+  },
+  {
+    "CumulativeTaskHours": 160.85,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.11,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Planning",
+    "HoursToComplete": 10.96
+  },
+  {
+    "CumulativeTaskHours": 185.51,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.12,
+    "WeekOfPlannedCompletion": 1,
+    "Task": "Create an outline",
+    "HoursToComplete": 24.66
+  },
+  {
+    "CumulativeTaskHours": 234.83,
+    "PlannedValue": 0.03,
+    "CumulativePlannedValue": 0.16,
+    "WeekOfPlannedCompletion": 2,
+    "Task": "Writing",
+    "HoursToComplete": 49.32
+  },
+  {
+    "CumulativeTaskHours": 252.64,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.17,
+    "WeekOfPlannedCompletion": 2,
+    "Task": "Personal review",
+    "HoursToComplete": 17.81
+  },
+  {
+    "CumulativeTaskHours": 281.41,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.19,
+    "WeekOfPlannedCompletion": 2,
+    "Task": "Inspection",
+    "HoursToComplete": 28.77
+  },
+  {
+    "CumulativeTaskHours": 286.89,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.19,
+    "WeekOfPlannedCompletion": 2,
+    "Task": "Verify data",
+    "HoursToComplete": 5.48
+  },
+  {
+    "CumulativeTaskHours": 287.91,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.19,
+    "WeekOfPlannedCompletion": 2,
+    "Task": "Submission to peers",
+    "HoursToComplete": 1.02
+  },
+  {
+    "CumulativeTaskHours": 290.47,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.19,
+    "WeekOfPlannedCompletion": 2,
+    "Task": "Review peer feedback",
+    "HoursToComplete": 2.56
+  },
+  {
+    "CumulativeTaskHours": 295.79,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.2,
+    "WeekOfPlannedCompletion": 2,
+    "Task": "Implement peer feedback",
+    "HoursToComplete": 5.32
+  },
+  {
+    "CumulativeTaskHours": 299.78,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.2,
+    "WeekOfPlannedCompletion": 2,
+    "Task": "Submission to publisher",
+    "HoursToComplete": 3.99
+  },
+  {
+    "CumulativeTaskHours": 310.74,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.21,
+    "WeekOfPlannedCompletion": 3,
+    "Task": "Planning",
+    "HoursToComplete": 10.96
+  },
+  {
+    "CumulativeTaskHours": 335.4,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.22,
+    "WeekOfPlannedCompletion": 3,
+    "Task": "Create an outline",
+    "HoursToComplete": 24.66
+  },
+  {
+    "CumulativeTaskHours": 384.72,
+    "PlannedValue": 0.03,
+    "CumulativePlannedValue": 0.26,
+    "WeekOfPlannedCompletion": 3,
+    "Task": "Writing",
+    "HoursToComplete": 49.32
+  },
+  {
+    "CumulativeTaskHours": 402.53,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.27,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Personal review",
+    "HoursToComplete": 17.81
+  },
+  {
+    "CumulativeTaskHours": 431.3,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.29,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Inspection",
+    "HoursToComplete": 28.77
+  },
+  {
+    "CumulativeTaskHours": 436.78,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.29,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Verify data",
+    "HoursToComplete": 5.48
+  },
+  {
+    "CumulativeTaskHours": 437.8,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.29,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Submission to peers",
+    "HoursToComplete": 1.02
+  },
+  {
+    "CumulativeTaskHours": 440.36,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.29,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Review peer feedback",
+    "HoursToComplete": 2.56
+  },
+  {
+    "CumulativeTaskHours": 445.68,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.3,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Implement peer feedback",
+    "HoursToComplete": 5.32
+  },
+  {
+    "CumulativeTaskHours": 449.67,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.3,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Submission to publisher",
+    "HoursToComplete": 3.99
+  },
+  {
+    "CumulativeTaskHours": 460.63,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.31,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Planning",
+    "HoursToComplete": 10.96
+  },
+  {
+    "CumulativeTaskHours": 485.29,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.32,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Create an outline",
+    "HoursToComplete": 24.66
+  },
+  {
+    "CumulativeTaskHours": 534.61,
+    "PlannedValue": 0.03,
+    "CumulativePlannedValue": 0.36,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Writing",
+    "HoursToComplete": 49.32
+  },
+  {
+    "CumulativeTaskHours": 552.42,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.37,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Personal review",
+    "HoursToComplete": 17.81
+  },
+  {
+    "CumulativeTaskHours": 581.19,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.39,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Inspection",
+    "HoursToComplete": 28.77
+  },
+  {
+    "CumulativeTaskHours": 586.67,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.39,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Verify data",
+    "HoursToComplete": 5.48
+  },
+  {
+    "CumulativeTaskHours": 587.69,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.39,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Submission to peers",
+    "HoursToComplete": 1.02
+  },
+  {
+    "CumulativeTaskHours": 590.25,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.39,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Review peer feedback",
+    "HoursToComplete": 2.56
+  },
+  {
+    "CumulativeTaskHours": 595.57,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.4,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Implement peer feedback",
+    "HoursToComplete": 5.32
+  },
+  {
+    "CumulativeTaskHours": 599.56,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.4,
+    "WeekOfPlannedCompletion": 4,
+    "Task": "Submission to publisher",
+    "HoursToComplete": 3.99
+  },
+  {
+    "CumulativeTaskHours": 610.52,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.41,
+    "WeekOfPlannedCompletion": 5,
+    "Task": "Planning",
+    "HoursToComplete": 10.96
+  },
+  {
+    "CumulativeTaskHours": 635.18,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.42,
+    "WeekOfPlannedCompletion": 5,
+    "Task": "Create an outline",
+    "HoursToComplete": 24.66
+  },
+  {
+    "CumulativeTaskHours": 684.5,
+    "PlannedValue": 0.03,
+    "CumulativePlannedValue": 0.46,
+    "WeekOfPlannedCompletion": 5,
+    "Task": "Writing",
+    "HoursToComplete": 49.32
+  },
+  {
+    "CumulativeTaskHours": 702.31,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.47,
+    "WeekOfPlannedCompletion": 6,
+    "Task": "Personal review",
+    "HoursToComplete": 17.81
+  },
+  {
+    "CumulativeTaskHours": 731.08,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.49,
+    "WeekOfPlannedCompletion": 6,
+    "Task": "Inspection",
+    "HoursToComplete": 28.77
+  },
+  {
+    "CumulativeTaskHours": 736.56,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.49,
+    "WeekOfPlannedCompletion": 6,
+    "Task": "Verify data",
+    "HoursToComplete": 5.48
+  },
+  {
+    "CumulativeTaskHours": 737.58,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.49,
+    "WeekOfPlannedCompletion": 6,
+    "Task": "Submission to peers",
+    "HoursToComplete": 1.02
+  },
+  {
+    "CumulativeTaskHours": 740.14,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.49,
+    "WeekOfPlannedCompletion": 6,
+    "Task": "Review peer feedback",
+    "HoursToComplete": 2.56
+  },
+  {
+    "CumulativeTaskHours": 745.46,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.5,
+    "WeekOfPlannedCompletion": 6,
+    "Task": "Implement peer feedback",
+    "HoursToComplete": 5.32
+  },
+  {
+    "CumulativeTaskHours": 749.45,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.5,
+    "WeekOfPlannedCompletion": 6,
+    "Task": "Submission to publisher",
+    "HoursToComplete": 3.99
+  },
+  {
+    "CumulativeTaskHours": 760.41,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.51,
+    "WeekOfPlannedCompletion": 6,
+    "Task": "Planning",
+    "HoursToComplete": 10.96
+  },
+  {
+    "CumulativeTaskHours": 785.07,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.52,
+    "WeekOfPlannedCompletion": 6,
+    "Task": "Create an outline",
+    "HoursToComplete": 24.66
+  },
+  {
+    "CumulativeTaskHours": 834.39,
+    "PlannedValue": 0.03,
+    "CumulativePlannedValue": 0.56,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Writing",
+    "HoursToComplete": 49.32
+  },
+  {
+    "CumulativeTaskHours": 852.2,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.57,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Personal review",
+    "HoursToComplete": 17.81
+  },
+  {
+    "CumulativeTaskHours": 880.97,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.59,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Inspection",
+    "HoursToComplete": 28.77
+  },
+  {
+    "CumulativeTaskHours": 886.45,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.59,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Verify data",
+    "HoursToComplete": 5.48
+  },
+  {
+    "CumulativeTaskHours": 887.47,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.59,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Submission to peers",
+    "HoursToComplete": 1.02
+  },
+  {
+    "CumulativeTaskHours": 890.03,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.59,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Review peer feedback",
+    "HoursToComplete": 2.56
+  },
+  {
+    "CumulativeTaskHours": 895.35,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.6,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Implement peer feedback",
+    "HoursToComplete": 5.32
+  },
+  {
+    "CumulativeTaskHours": 899.34,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.6,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Submission to publisher",
+    "HoursToComplete": 3.99
+  },
+  {
+    "CumulativeTaskHours": 910.3,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.61,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Planning",
+    "HoursToComplete": 10.96
+  },
+  {
+    "CumulativeTaskHours": 934.96,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.62,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Create an outline",
+    "HoursToComplete": 24.66
+  },
+  {
+    "CumulativeTaskHours": 984.28,
+    "PlannedValue": 0.03,
+    "CumulativePlannedValue": 0.66,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Writing",
+    "HoursToComplete": 49.32
+  },
+  {
+    "CumulativeTaskHours": 1002.09,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.67,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Personal review",
+    "HoursToComplete": 17.81
+  },
+  {
+    "CumulativeTaskHours": 1030.86,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.69,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Inspection",
+    "HoursToComplete": 28.77
+  },
+  {
+    "CumulativeTaskHours": 1036.34,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.69,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Verify data",
+    "HoursToComplete": 5.48
+  },
+  {
+    "CumulativeTaskHours": 1037.36,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.69,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Submission to peers",
+    "HoursToComplete": 1.02
+  },
+  {
+    "CumulativeTaskHours": 1039.92,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.69,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Review peer feedback",
+    "HoursToComplete": 2.56
+  },
+  {
+    "CumulativeTaskHours": 1045.24,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.7,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Implement peer feedback",
+    "HoursToComplete": 5.32
+  },
+  {
+    "CumulativeTaskHours": 1049.23,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.7,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Submission to publisher",
+    "HoursToComplete": 3.99
+  },
+  {
+    "CumulativeTaskHours": 1060.19,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.71,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Planning",
+    "HoursToComplete": 10.96
+  },
+  {
+    "CumulativeTaskHours": 1084.85,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.72,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Create an outline",
+    "HoursToComplete": 24.66
+  },
+  {
+    "CumulativeTaskHours": 1134.17,
+    "PlannedValue": 0.03,
+    "CumulativePlannedValue": 0.76,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Writing",
+    "HoursToComplete": 49.32
+  },
+  {
+    "CumulativeTaskHours": 1151.98,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.77,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Personal review",
+    "HoursToComplete": 17.81
+  },
+  {
+    "CumulativeTaskHours": 1180.75,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.79,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Inspection",
+    "HoursToComplete": 28.77
+  },
+  {
+    "CumulativeTaskHours": 1186.23,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.79,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Verify data",
+    "HoursToComplete": 5.48
+  },
+  {
+    "CumulativeTaskHours": 1187.25,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.79,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Submission to peers",
+    "HoursToComplete": 1.02
+  },
+  {
+    "CumulativeTaskHours": 1189.81,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.79,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Review peer feedback",
+    "HoursToComplete": 2.56
+  },
+  {
+    "CumulativeTaskHours": 1195.13,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.8,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Implement peer feedback",
+    "HoursToComplete": 5.32
+  },
+  {
+    "CumulativeTaskHours": 1199.12,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.8,
+    "WeekOfPlannedCompletion": 7,
+    "Task": "Submission to publisher",
+    "HoursToComplete": 3.99
+  },
+  {
+    "CumulativeTaskHours": 1210.08,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.81,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Planning",
+    "HoursToComplete": 10.96
+  },
+  {
+    "CumulativeTaskHours": 1234.74,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.82,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Create an outline",
+    "HoursToComplete": 24.66
+  },
+  {
+    "CumulativeTaskHours": 1284.06,
+    "PlannedValue": 0.03,
+    "CumulativePlannedValue": 0.86,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Writing",
+    "HoursToComplete": 49.32
+  },
+  {
+    "CumulativeTaskHours": 1301.87,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.87,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Personal review",
+    "HoursToComplete": 17.81
+  },
+  {
+    "CumulativeTaskHours": 1330.64,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.89,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Inspection",
+    "HoursToComplete": 28.77
+  },
+  {
+    "CumulativeTaskHours": 1336.12,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.89,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Verify data",
+    "HoursToComplete": 5.48
+  },
+  {
+    "CumulativeTaskHours": 1337.14,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.89,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Submission to peers",
+    "HoursToComplete": 1.02
+  },
+  {
+    "CumulativeTaskHours": 1339.7,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.89,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Review peer feedback",
+    "HoursToComplete": 2.56
+  },
+  {
+    "CumulativeTaskHours": 1345.02,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.9,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Implement peer feedback",
+    "HoursToComplete": 5.32
+  },
+  {
+    "CumulativeTaskHours": 1349.01,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.9,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Submission to publisher",
+    "HoursToComplete": 3.99
+  },
+  {
+    "CumulativeTaskHours": 1359.97,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.91,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Planning",
+    "HoursToComplete": 10.96
+  },
+  {
+    "CumulativeTaskHours": 1384.63,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.92,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Create an outline",
+    "HoursToComplete": 24.66
+  },
+  {
+    "CumulativeTaskHours": 1433.95,
+    "PlannedValue": 0.03,
+    "CumulativePlannedValue": 0.96,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Writing",
+    "HoursToComplete": 49.32
+  },
+  {
+    "CumulativeTaskHours": 1451.76,
+    "PlannedValue": 0.01,
+    "CumulativePlannedValue": 0.97,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Personal review",
+    "HoursToComplete": 17.81
+  },
+  {
+    "CumulativeTaskHours": 1480.53,
+    "PlannedValue": 0.02,
+    "CumulativePlannedValue": 0.99,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Inspection",
+    "HoursToComplete": 28.77
+  },
+  {
+    "CumulativeTaskHours": 1486.01,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.99,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Verify data",
+    "HoursToComplete": 5.48
+  },
+  {
+    "CumulativeTaskHours": 1487.03,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.99,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Submission to peers",
+    "HoursToComplete": 1.02
+  },
+  {
+    "CumulativeTaskHours": 1489.59,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 0.99,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Review peer feedback",
+    "HoursToComplete": 2.56
+  },
+  {
+    "CumulativeTaskHours": 1494.91,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 1.0,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Implement peer feedback",
+    "HoursToComplete": 5.32
+  },
+  {
+    "CumulativeTaskHours": 1498.9,
+    "PlannedValue": 0.0,
+    "CumulativePlannedValue": 1.0,
+    "WeekOfPlannedCompletion": 8,
+    "Task": "Submission to publisher",
+    "HoursToComplete": 3.99
+  }
+]

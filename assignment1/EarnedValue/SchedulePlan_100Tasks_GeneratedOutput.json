@@ -1,0 +1,72 @@
+[
+  {
+    "CumulativePlannedTaskHours": 200.0,
+    "CumulativePlannedValue": 0.09,
+    "Week": 1,
+    "Begin": "2020-03-01T00:00:00",
+    "PlannedTaskHours": 200.0
+  },
+  {
+    "CumulativePlannedTaskHours": 300.0,
+    "CumulativePlannedValue": 0.14,
+    "Week": 2,
+    "Begin": "2020-03-08T00:00:00",
+    "PlannedTaskHours": 100.0
+  },
+  {
+    "CumulativePlannedTaskHours": 400.0,
+    "CumulativePlannedValue": 0.18,
+    "Week": 3,
+    "Begin": "2020-03-15T00:00:00",
+    "PlannedTaskHours": 100.0
+  },
+  {
+    "CumulativePlannedTaskHours": 600.0,
+    "CumulativePlannedValue": 0.27,
+    "Week": 4,
+    "Begin": "2020-03-22T00:00:00",
+    "PlannedTaskHours": 200.0
+  },
+  {
+    "CumulativePlannedTaskHours": 700.0,
+    "CumulativePlannedValue": 0.32,
+    "Week": 5,
+    "Begin": "2020-03-29T00:00:00",
+    "PlannedTaskHours": 100.0
+  },
+  {
+    "CumulativePlannedTaskHours": 800.0,
+    "CumulativePlannedValue": 0.36,
+    "Week": 6,
+    "Begin": "2020-04-05T00:00:00",
+    "PlannedTaskHours": 100.0
+  },
+  {
+    "CumulativePlannedTaskHours": 1200.0,
+    "CumulativePlannedValue": 0.55,
+    "Week": 7,
+    "Begin": "2020-04-12T00:00:00",
+    "PlannedTaskHours": 400.0
+  },
+  {
+    "CumulativePlannedTaskHours": 1800.0,
+    "CumulativePlannedValue": 0.82,
+    "Week": 8,
+    "Begin": "2020-04-19T00:00:00",
+    "PlannedTaskHours": 600.0
+  },
+  {
+    "CumulativePlannedTaskHours": 2000.0,
+    "CumulativePlannedValue": 0.91,
+    "Week": 9,
+    "Begin": "2020-04-26T00:00:00",
+    "PlannedTaskHours": 200.0
+  },
+  {
+    "CumulativePlannedTaskHours": 2200.0,
+    "CumulativePlannedValue": 1.0,
+    "Week": 10,
+    "Begin": "2020-05-03T00:00:00",
+    "PlannedTaskHours": 200.0
+  }
+]
