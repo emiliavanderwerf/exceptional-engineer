@@ -10,6 +10,9 @@ namespace EarnedValue
     public class Program
     {
         #region Private Members
+        private const string InputDirectory = "Input\\";
+        private const string ExpectedOutputDirectory = "ExpectedOutput\\";
+        private const string GeneratedOutputDirectory = "GeneratedOutput\\";
         private const string JsonSuffix = ".json";
         private const string GeneratedOutputFragment = "_GeneratedOutput";
         private Validator Validator = new Validator();
@@ -18,7 +21,11 @@ namespace EarnedValue
 
         #region Unit Test Methods
         [Theory]
-        [InlineData("SchedulePlan_ExampleData.json", "TaskPlan_ExampleData.json", "SchedulePlan_ExampleData_Output.json", "TaskPlan_ExampleData_Output.json")]
+        [InlineData(
+            InputDirectory + "SchedulePlan_ExampleData.json",
+            InputDirectory + "TaskPlan_ExampleData.json",
+            ExpectedOutputDirectory + "SchedulePlan_ExampleData_Output.json",
+            ExpectedOutputDirectory + "TaskPlan_ExampleData_Output.json")]
         public void Should_Calculate_Earned_Value_Plan_And_Validate_Data(
             string schedulePlanPath,
             string taskPlanPath,
@@ -125,7 +132,10 @@ namespace EarnedValue
             List<TaskPlanOutput> taskPlanOutputs)
         {
             string schedulePlanGeneratedOutputPath = schedulePlanPath.Insert(schedulePlanPath.Length - JsonSuffix.Length, GeneratedOutputFragment);
+            schedulePlanGeneratedOutputPath.Replace(InputDirectory, GeneratedOutputDirectory);
             string taskPlanGeneratedOutputPath = taskPlanPath.Insert(taskPlanPath.Length - JsonSuffix.Length, GeneratedOutputFragment);
+            taskPlanGeneratedOutputPath.Replace(InputDirectory, GeneratedOutputDirectory);
+
             WriteOutput(ResolvePath(schedulePlanGeneratedOutputPath), schedulePlanOutputs);
             WriteOutput(ResolvePath(taskPlanGeneratedOutputPath), taskPlanOutputs);
         }
