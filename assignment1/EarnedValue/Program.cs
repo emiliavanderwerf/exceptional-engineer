@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using Xunit;
 
 namespace EarnedValue
@@ -31,8 +32,8 @@ namespace EarnedValue
             List<SchedulePlan> schedulePlans = ReadSchedulePlan(schedulePlanPath);
             List<TaskPlan> taskPlans = ReadTaskPlan(taskPlanPath);
 
-            Assert.Throws(typeof(InvalidDataException), () => Validator.Validate(schedulePlans));
-            Assert.Throws(typeof(InvalidDataException), () => Validator.Validate(taskPlans));
+            Assert.Throws<InvalidDataException>(() => Validator.Validate(schedulePlans));
+            Assert.Throws<InvalidDataException>(() => Validator.Validate(taskPlans));
         }
 
         private List<SchedulePlan> ReadSchedulePlan(string schedulePlanPath)
@@ -40,7 +41,7 @@ namespace EarnedValue
             List<SchedulePlan> schedulePlans = new List<SchedulePlan>();
             try
             {
-                using (StreamReader r = new StreamReader(schedulePlanPath))
+                using (StreamReader r = new StreamReader(ResolvePath(schedulePlanPath)))
                 {
                     string schedulePlan = r.ReadToEnd();
                     schedulePlans = JsonConvert.DeserializeObject<List<SchedulePlan>>(schedulePlan);
@@ -59,7 +60,7 @@ namespace EarnedValue
             List<TaskPlan> taskPlans = new List<TaskPlan>();
             try
             {
-                using (StreamReader r = new StreamReader(taskPlanPath))
+                using (StreamReader r = new StreamReader(ResolvePath(taskPlanPath)))
                 {
                     string taskPlan = r.ReadToEnd();
                     taskPlans = JsonConvert.DeserializeObject<List<TaskPlan>>(taskPlan);
@@ -71,6 +72,13 @@ namespace EarnedValue
             }
 
             return taskPlans;
+        }
+
+        private string ResolvePath(string fileName)
+        {
+            string dllPath = Path.GetDirectoryName(Assembly.GetAssembly(typeof(Program)).Location);
+            string slnPath = Path.Combine(dllPath, $"..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..");
+            return Path.GetFullPath(Path.Combine(slnPath, fileName));
         }
     }
 }

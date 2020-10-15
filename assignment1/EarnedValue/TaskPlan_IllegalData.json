@@ -1,8 +1,6 @@
-{
-    "TaskPlans": [
-        {
-            "Task": "",
-            "HoursToComplete": -98
-        }
-    ]
-}
+[
+    {
+        "Task": "",
+        "HoursToComplete": -98
+    }
+]

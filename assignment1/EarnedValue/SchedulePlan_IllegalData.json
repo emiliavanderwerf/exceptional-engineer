@@ -1,9 +1,7 @@
-{
-    "SchedulePlans": [
-        {
-            "Week": 0,
-            "Begin": "3/1/2020 12:00:00 AM",
-            "PlannedTaskHours": -4
-        }
-    ]
-}
+[
+    {
+        "Week": 0,
+        "Begin": "3/1/2020 12:00:00 AM",
+        "PlannedTaskHours": -4
+    }
+]
