@@ -1,11 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Correlation
 {
+    /// <summary>
+    /// This model class with statically initialized data describes the estimated proxy size, planned added and
+    /// modified size, actual added and modified size, and actual development hours for 10 sample software
+    /// programs. See remarks.
+    /// </summary>
     public class TestData
     {
+        /// <summary>
+        /// The estimated LOC size of each program before the program was written.
+        /// </summary>
         public static readonly List<int> EstimatedProxySize = new List<int>
         {
             130,
@@ -20,6 +26,9 @@ namespace Correlation
             961
         };
 
+        /// <summary>
+        /// The planned/estimated LOC which will be added or modified in each program before the program was written.
+        /// </summary>
         public static readonly List<int> PlannedAddedModifiedSize = new List<int>
         {
             163,
@@ -34,6 +43,9 @@ namespace Correlation
             1130
         };
 
+        /// <summary>
+        /// The actual LOC which were added or modified, counted after the program was written.
+        /// </summary>
         public static readonly List<int> ActualAddedModifiedSize = new List<int>
         {
             186,
@@ -48,6 +60,9 @@ namespace Correlation
             1601
         };
 
+        /// <summary>
+        /// The actual number of hours it took to complete the program.
+        /// </summary>
         public static readonly List<double> ActualDevelopmentHours = new List<double>
         {
             15.0,
