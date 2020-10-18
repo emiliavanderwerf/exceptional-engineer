@@ -12,7 +12,7 @@ namespace Correlation
         /// <summary>
         /// The estimated LOC size of each program before the program was written.
         /// </summary>
-        public static readonly List<int> EstimatedProxySize = new List<int>
+        public static readonly List<double> EstimatedProxySize = new List<double>
         {
             130,
             650,
@@ -29,7 +29,7 @@ namespace Correlation
         /// <summary>
         /// The planned/estimated LOC which will be added or modified in each program before the program was written.
         /// </summary>
-        public static readonly List<int> PlannedAddedModifiedSize = new List<int>
+        public static readonly List<double> PlannedAddedModifiedSize = new List<double>
         {
             163,
             765,
@@ -46,7 +46,7 @@ namespace Correlation
         /// <summary>
         /// The actual LOC which were added or modified, counted after the program was written.
         /// </summary>
-        public static readonly List<int> ActualAddedModifiedSize = new List<int>
+        public static readonly List<double> ActualAddedModifiedSize = new List<double>
         {
             186,
             699,
