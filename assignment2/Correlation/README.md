@@ -10,29 +10,30 @@ The requirements of this assignment are:
 We have been supplied with the below minimum test data and the expected results with which to verify the correct
 functioning of this program:
 
-TODO: Insert image
+![Test Data](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/TestData.PNG)
 
 ## Formulas
 Below are the formulas which this program is required to calculate correctly:
 
 ### Regression Formulas
-TODO: Insert image
+![Regression Formulas](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/RegressionFormulas.PNG)
 
 ### Correlation Formulas
-TODO: Insert image
+![Correlation Formulas](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/RegressionFormulas.PNG)
 
 ### Prediction Formula
 Given an estimate `E` LOC for a program, we would estimate a value for `P` where: `P = B0 + B1 * E`.
 
 ## Software Design
-TODO; Insert images
+![First 1/2 of design](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/Design_Pic1.jpg)
+![Second 1/2 of design](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/Design_Pic2.jpg)
 
 ## Results
 The below is my personal Process Dashboard Data as I completed this assignment.
 
 Earned Value:
 
-TODO: Insert image
+TODO: Insert image (need to complete the Verify Data task)
 
 Size:
 
