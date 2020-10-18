@@ -34,7 +34,7 @@ namespace Correlation
         {
             List<int> plannedAddedModifiedSize = TestData.PlannedAddedModifiedSize;
             List<int> actualAddedModifiedSize = TestData.ActualAddedModifiedSize;
-            double B0 = 23.92;
+            double B0 = -23.92;
             double B1 = 1.43097;
             double r = 0.9631;
             double rSquared = 0.9276;
