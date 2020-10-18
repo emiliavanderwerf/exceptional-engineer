@@ -59,9 +59,11 @@ namespace Correlation
         {
             double calculatedB1 = B1Calculator.Calculate(x, y);
             double calculatedB0 = B0Calculator.Calculate(x, y, calculatedB1);
+            double calculatedR = RCalculator.Calculate(x, y);
 
             Assert.True(Math.Round(calculatedB0, 2).Equals(Math.Round(B0, 2)));
             Assert.True(Math.Round(calculatedB1, 2).Equals(Math.Round(B1, 2)));
+            Assert.True(Math.Round(calculatedR, 2).Equals(Math.Round(r, 2)));
         }
     }
 }
