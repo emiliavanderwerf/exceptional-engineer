@@ -15,44 +15,52 @@ namespace Correlation
             double rSquared = 0.9111;
             double P = 644.429;
 
-            double calculatedB1 = B1Calculator.Calculate(TestData.EstimatedProxySize, TestData.ActualAddedModifiedSize);
-            double calculatedB0 = B0Calculator.Calculate(TestData.EstimatedProxySize, TestData.ActualAddedModifiedSize, calculatedB1);
+            CalculateAndVerify(B0, B1, r, rSquared, P, TestData.EstimatedProxySize, TestData.ActualAddedModifiedSize);
         }
 
         [Fact]
         public void Should_Calculate_Using_EstimatedProxySize_And_ActualDevelopmentTime()
         {
-            List<double> estimatedProxySize = TestData.EstimatedProxySize;
-            List<double> actualDevelopmentHours = TestData.ActualDevelopmentHours;
             double B0 = -4.039;
             double B1 = 0.1681;
             double r = 0.9333;
             double rSquared = 0.8711;
             double P = 60.858;
+
+            CalculateAndVerify(B0, B1, r, rSquared, P, TestData.EstimatedProxySize, TestData.ActualDevelopmentHours);
         }
 
         [Fact]
         public void Should_Calculate_Using_PlannedAddedModifiedSize_And_ActualAddedModifiedSize()
         {
-            List<double> plannedAddedModifiedSize = TestData.PlannedAddedModifiedSize;
-            List<double> actualAddedModifiedSize = TestData.ActualAddedModifiedSize;
             double B0 = -23.92;
             double B1 = 1.43097;
             double r = 0.9631;
             double rSquared = 0.9276;
-            double P = 528.4294;       
+            double P = 528.4294;
+
+            CalculateAndVerify(B0, B1, r, rSquared, P, TestData.PlannedAddedModifiedSize, TestData.ActualAddedModifiedSize);
         }
 
         [Fact]
         public void Should_Calculate_Using_PlannedAddedModifiedSize_And_ActualDevelopmentTime()
         {
-            List<double> plannedAddedModifiedSize = TestData.PlannedAddedModifiedSize;
-            List<double> actualDevelopmentHours = TestData.ActualDevelopmentHours;
             double B0 = -4.604;
             double B1 = 0.140164;
             double r = 0.9480;
             double rSquared = 0.8988;
-            double P = 49.4994;        
+            double P = 49.4994;
+
+            CalculateAndVerify(B0, B1, r, rSquared, P, TestData.PlannedAddedModifiedSize, TestData.ActualDevelopmentHours);
+        }
+
+        private void CalculateAndVerify(double B0, double B1, double r, double rSquared, double P, List<double> x, List<double> y)
+        {
+            double calculatedB1 = B1Calculator.Calculate(x, y);
+            double calculatedB0 = B0Calculator.Calculate(x, y, calculatedB1);
+
+            Assert.True(calculatedB0.Equals(B0));
+            Assert.True(calculatedB1.Equals(B1));
         }
     }
 }
