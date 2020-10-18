@@ -1,4 +1,5 @@
 ﻿using Correlation.Calculators;
+using System;
 using System.Collections.Generic;
 using Xunit;
 
@@ -59,8 +60,8 @@ namespace Correlation
             double calculatedB1 = B1Calculator.Calculate(x, y);
             double calculatedB0 = B0Calculator.Calculate(x, y, calculatedB1);
 
-            Assert.True(calculatedB0.Equals(B0));
-            Assert.True(calculatedB1.Equals(B1));
+            Assert.True(Math.Round(calculatedB0, 2).Equals(Math.Round(B0, 2)));
+            Assert.True(Math.Round(calculatedB1, 2).Equals(Math.Round(B1, 2)));
         }
     }
 }
