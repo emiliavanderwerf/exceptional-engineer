@@ -35,6 +35,19 @@ The purpose of this assignment is to:
 
 ## Results
 
-The below is my personal Process Dashboard Data as I completed this assignment.
+As shown by the Work Breakdown Structure below, I estimated that the project would take me a total of 5.8 hours to
+complete, but it actually took 4.8 hours. Furthermore, I split the project deliverables into 3 portions: get data, do
+calculations, and output data. The same development workflow was applied to each of the portions.
 
 ![My Earned Value Schedule](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment1/EarnedValue/Images/DataActuals.PNG)
+
+The below "Plan vs Actual Time" graph and trendline show that I tend to overestimated the planned number of hours I
+believe it will take me to accomplish each of the tasks in the above Work Breakdown Structure screenshot. When I make
+future predictions of how long a task will take me, I can use this trendline.
+
+![Plan vs Actual Time Graph](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment1/EarnedValue/Images/PlannedVsActualTime.PNG)
+
+The below Project Rollup Plan Summary shows my productivity (in LOC/hour), the size of the program, and the defects I
+both injected during development & removed.
+
+![Project Rollup Plan Summary](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment1/EarnedValue/Images/ProjectRollupPlanSummary.PNG)
