@@ -46,4 +46,7 @@ both injected during development & removed.
 
 ## Aggregate Results for Assignments 1 & 2
 
-TODO: Add
+The below "Plan vs Actual Time" graph is the aggregation of both assignments 1 and 2. It shows that overall, I overplan
+for tasks and then complete them early.
+
+![Plan vs Actual Time Graph for Assignments 1 and 2](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/Aggregated_PlannedVsActualTime.PNG)
