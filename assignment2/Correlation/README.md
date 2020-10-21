@@ -28,13 +28,22 @@ Given an estimate `E` LOC for a program, we would estimate a value for `P` where
 ![First 1/2 of design](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/Design_Pic1.jpg)
 ![Second 1/2 of design](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/Design_Pic2.jpg)
 
-## Results
-The below is my personal Process Dashboard Data as I completed this assignment.
+## Results for Assignment 2
+As shown by the Work Breakdown Structure below, I estimated that the project would take me a total of 2.7 hours, which
+turned out to be a perfect estimate since it actually took me 2.7 hours.
 
-Earned Value:
+![Work Breakdown Structure](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/WorkBreakdownStructure.PNG)
 
-TODO: Insert image (need to complete the Verify Data task)
+The below "Plan vs Actual Time" graph and trendline show that the time I planned for each task listed in the above Work
+Breakdown Structure is a tiny bit lower than the actual time I spent.
 
-Size:
+![Plan vs Actual Time Graph](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/PlannedVsActualTime.PNG)
 
-TODO: Insert image (need to complete the Verify Data task)
+The below Project Rollup Plan Summary shows my productivity (in LOC/hour), the size of the program, and the defects I
+both injected during development & removed.
+
+![Project Rollup Plan Summary](https://github.com/emiliavanderwerf/exceptional-engineer/blob/master/assignment2/Correlation/Images/ProjectRollupPlanSummary.PNG)
+
+## Aggregate Results for Assignments 1 & 2
+
+TODO: Add
